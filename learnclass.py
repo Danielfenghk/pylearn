@@ -7,7 +7,11 @@ class RevealAccess(object):
 #add second line
 =======
 #this is a comment
+<<<<<<< HEAD
 >>>>>>> change learnclass.py in dev
+=======
+#add sencond line
+>>>>>>> add second line
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
