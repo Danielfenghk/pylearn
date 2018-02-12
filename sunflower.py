@@ -1,7 +1,7 @@
 import turtle
 import time
 
-
+#for kids
 turtle.pensize(5)
 turtle.pencolor("yellow")
 turtle.fillcolor("red")
