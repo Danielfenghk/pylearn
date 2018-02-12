@@ -2,8 +2,7 @@ class RevealAccess(object):
     """A data descriptor that sets and returns values
        normally and prints a message logging their access.
     """
-#add first line
-#add second line
+#checkout by master
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
