@@ -3,6 +3,10 @@ class RevealAccess(object):
        normally and prints a message logging their access.
     """
 
+<<<<<<< HEAD
+=======
+>>>>>>> add second line
+>>>>>>> no message
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
