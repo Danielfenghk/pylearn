@@ -6,6 +6,8 @@ class RevealAccess(object):
 #test branch second comment
 #bug branch first comment
 #bug branch seond comment
+#test branch third comment
+
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
