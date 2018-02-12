@@ -3,6 +3,7 @@ class RevealAccess(object):
        normally and prints a message logging their access.
     """
 #test branch first comment
+#test branch second comment
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
