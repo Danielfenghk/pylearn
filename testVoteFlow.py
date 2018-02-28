@@ -1,4 +1,5 @@
 from locust import HttpLocust, TaskSet, task
+from locust.exception import StopLocust
 import random
 
 class MyTaskSet(TaskSet):
@@ -8,10 +9,16 @@ class MyTaskSet(TaskSet):
 	@task
 	def my_task(self):
 		print("executing my_task")
+		self.homepage()
 		token = self.login()
 		self.getQuestion(token)
 		self.getImage()
 		self.submitVote(token)
+		
+	def homepage(self):
+		print("visting homepage")
+		response=self.client.get("/")
+		print(response.status_code)
 	
 	def login(self):
 		print("executing login")
@@ -24,6 +31,8 @@ class MyTaskSet(TaskSet):
 		})
 		json_response_dict = response.json()
 		print(json_response_dict)
+		if json_response_dict['success']==False:
+			raise StopLocust()
 		token = json_response_dict['token']
 		print(token)
 		
@@ -38,20 +47,17 @@ class MyTaskSet(TaskSet):
 	def getImage(self):
 		print("executing getImage")
 		self.client.headers['Content-Type'] = "application/json; charset=utf-8"
-		response = self.client.get("images/team-photo/madeInTAL.jpg")
+		response = self.client.get("images/team-photo/HKO.jpg")
 		
 	def submitVote(self, token):
 		print("executing submitVote")
 		self.client.headers['Content-Type'] = "application/json; charset=utf-8"
+		rtn=random.sample(range(1,8),5)
 		response = self.client.post("service/submit_vote", json={
 			u'token': token,
-			u'votes': [ 
-				{
-					"question_id": 1,
-					"option_id": 1
-				}
-			]
+			u'votes': [{"question_id":i, "option_id": rtn[i-1]} for i in range (1,6)]
 		})
+		
 		json_response_dict = response.json()
 		message = json_response_dict['message']
 		print(message)
