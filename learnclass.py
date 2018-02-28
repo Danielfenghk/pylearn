@@ -2,12 +2,7 @@ class RevealAccess(object):
     """A data descriptor that sets and returns values
        normally and prints a message logging their access.
     """
-#test branch first comment
-#test branch second comment
-#bug branch first comment
-#bug branch seond comment
-#test branch third comment
-#test branch fourth comment
+
     def __init__(self, initval=None, name='var'):
         self.val = initval
         self.name = name
