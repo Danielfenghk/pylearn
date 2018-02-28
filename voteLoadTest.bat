@@ -1,0 +1,1 @@
+locust -f testVoteFlow.py --host=https://uatapps.talgroup.com/vote/
