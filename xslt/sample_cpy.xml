@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by test (EMBRACE) -->
+<Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Order>
+		<OrderHeader>
+			<OrderID>1121</OrderID>
+			<OrderDate>2018-01-14T18:54:36</OrderDate>
+			<Customer>
+				<ShipToName>Test A Tester</ShipToName>
+				<StreetAddress>350 E 1st Ave</StreetAddress>
+				<StreetAddressLine2>Ste 200</StreetAddressLine2>
+				<City>Columbus</City>
+				<State>OH</State>
+				<ZipCode>43201</ZipCode>
+				<CustomerAddressCountry>US</CustomerAddressCountry>
+				<CustomerPhoneNumber>7401234567</CustomerPhoneNumber>
+			</Customer>
+		</OrderHeader>
+		<ShirtDetails>
+			<ShirtDetailCount>1</ShirtDetailCount>
+			<ShirtDetail>
+				<ShirtDetailNo>1</ShirtDetailNo>
+				<Quantity>5</Quantity>
+				<Fit>Slim</Fit>
+				<Size>S</Size>
+				<Wash>Warm Wash + Warm Tumble Dry</Wash>
+				<MainFabric>PI00011797-0001</MainFabric>
+				<Sail>Red</Sail>
+				<Placket>Regular</Placket>
+				<Collar>Spread</Collar>
+				<CuffStyle>1 Button Single Barrel</CuffStyle>
+				<Pocket>No Pocket</Pocket>
+				<ContrastFabric>FW01035889-0001</ContrastFabric>
+				<ContrastLocation>Collar and Placket</ContrastLocation>
+				<ShirtAlteration>
+					<BodyLength>0</BodyLength>
+					<LeftSleeveLength>0</LeftSleeveLength>
+					<RightSleeveLength>-2</RightSleeveLength>
+				</ShirtAlteration>
+				<RetailPrice>15.00</RetailPrice>
+			</ShirtDetail>
+		</ShirtDetails>
+	</Order>
+	<Order>
+		<OrderHeader>
+			<OrderID>1121</OrderID>
+			<OrderDate>2018-01-14T18:54:36</OrderDate>
+			<Customer>
+				<ShipToName>Test A Tester</ShipToName>
+				<StreetAddress>350 E 1st Ave</StreetAddress>
+				<StreetAddressLine2>Ste 200</StreetAddressLine2>
+				<City>Columbus</City>
+				<State>OH</State>
+				<ZipCode>43201</ZipCode>
+				<CustomerAddressCountry>US</CustomerAddressCountry>
+				<CustomerPhoneNumber>7401234567</CustomerPhoneNumber>
+			</Customer>
+		</OrderHeader>
+		<ShirtDetails>
+			<ShirtDetailCount>1</ShirtDetailCount>
+			<ShirtDetail>
+				<ShirtDetailNo>1</ShirtDetailNo>
+				<Quantity>5</Quantity>
+				<Fit>Slim</Fit>
+				<Size>S</Size>
+				<Wash>Warm Wash + Warm Tumble Dry</Wash>
+				<MainFabric>PI00011797-0001</MainFabric>
+				<Sail>Red</Sail>
+				<Placket>Regular</Placket>
+				<Collar>Spread</Collar>
+				<CuffStyle>1 Button Single Barrel</CuffStyle>
+				<Pocket>No Pocket</Pocket>
+				<ContrastFabric>FW01035889-0001</ContrastFabric>
+				<ContrastLocation>Collar and Placket</ContrastLocation>
+				<ShirtAlteration>
+					<BodyLength>0</BodyLength>
+					<LeftSleeveLength>0</LeftSleeveLength>
+					<RightSleeveLength>-2</RightSleeveLength>
+				</ShirtAlteration>
+				<RetailPrice>15.00</RetailPrice>
+			</ShirtDetail>
+		</ShirtDetails>
+	</Order>
+</Orders>

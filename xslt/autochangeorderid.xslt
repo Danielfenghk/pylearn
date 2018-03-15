@@ -10,7 +10,7 @@
  </xsl:template> 
 
  <xsl:template  match="/Orders/Order/OrderHeader/OrderID/text()">
-     <xsl:value-of select="ancestor::Order/count(preceding-sibling::Order)+1121"/>
+     <xsl:value-of select="count(ancestor::Order/preceding-sibling::Order)+1121"/>
  </xsl:template>
  
 </xsl:stylesheet>
